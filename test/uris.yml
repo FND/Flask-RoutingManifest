@@ -1,0 +1,11 @@
+# all entities
+/collection:
+    # list entities
+    GET: test.views.retrieve_collection
+    # create new entity
+    POST: test.views.create_entity
+
+# individual entities
+/collection/<entity>:
+    name: entity
+    class: test.views.Entity
